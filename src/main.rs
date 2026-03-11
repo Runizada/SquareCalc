@@ -1,10 +1,6 @@
 use std::io;
 
 fn main() {
-    let mut a = String::new();
-    let mut b = String::new();
-    let mut c = String::new();
-
     let a: i32 = loop {
         let mut imput1 = String::new();
 
@@ -50,8 +46,8 @@ fn main() {
 
     let dr = (d as f64).sqrt();
 
-    let x1 = ((-(b as f64) + dr) / ((n2 as f64) * (a as f64)));
-    let x2 = ((-(b as f64) - dr) / ((n2 as f64) * (a as f64)));
+    let x1 = (-(b as f64) + dr) / ((n2 as f64) * (a as f64));
+    let x2 = (-(b as f64) - dr) / ((n2 as f64) * (a as f64));
 
     println!("os raizes da função são x'={} x''={}\n\n", x1, x2);
 }
